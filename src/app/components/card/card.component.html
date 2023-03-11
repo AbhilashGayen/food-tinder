@@ -1,0 +1,24 @@
+<div class="container -product">
+  <ng-container *ngIf="!isCards; else noCards">
+    <ion-card *ngFor="let product of products" class="product-card" [id]="product.id">
+      <img [alt]="product.imageSet[0].title" [src]="product.imageSet[0].url" />
+      <ion-card-header>
+        <ion-card-title>{{product.name}}</ion-card-title>
+        <ion-card-subtitle>{{product.shortDescription}}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </ng-container>
+</div>
+
+<ng-template #noCards>
+  <ion-list>
+    <ion-item>
+      <ion-badge slot="end">{{counterSvc?.voteCounter?.likedIds.length||0}}</ion-badge>
+      <ion-label>Liked count</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-badge color="danger" slot="end">{{counterSvc?.voteCounter?.dislikedIds.length||0}}</ion-badge>
+      <ion-label>Disliked Count</ion-label>
+    </ion-item>
+  </ion-list>
+</ng-template>

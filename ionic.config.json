@@ -1,0 +1,7 @@
+{
+  "name": "foodji-tinder",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

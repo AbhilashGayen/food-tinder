@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Food Tinder
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding container">
+  <ng-container *ngIf="!isLoading">
+    <app-card *ngIf="freshProducts?.length" [products]="freshProducts"></app-card>
+    <div class="centered-axis-x">
+      <ion-button (click)="onReset()">Reset</ion-button>
+    </div>
+  </ng-container>
+  <ion-spinner *ngIf="isLoading" class="centered-axis-xy"></ion-spinner>
+</ion-content>
