@@ -1,12 +1,3 @@
-# Foodji Preview App
+# [Foodji Preview App](https://foodtinder-abhilashgayen.surge.sh/home)
 
-This app accompanies the Ionic component documentation.
-
-[[LIVE DEMO]](https://foodtinder-abhilashgayen.surge.sh/home)
-
-### Installation & Development
-
-1. extract files to a new folder `food-tinder`
-2. `cd food-tinder`
-3. `npm install`
-4. run `ionic serve` from a terminal
+![food-tinder](https://user-images.githubusercontent.com/24368822/224473387-1238a0de-9137-40ad-8b28-402671489a26.jpg)
